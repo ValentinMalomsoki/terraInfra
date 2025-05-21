@@ -99,6 +99,7 @@ jobs:
     name: 'apply plan'
     runs-on: self-hosted
     environment: production
+    needs: terraform
 
     defaults:
       run:
