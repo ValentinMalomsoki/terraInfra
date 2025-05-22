@@ -56,7 +56,7 @@ jobs:
   applyPlan:
     name: 'apply plan'
     runs-on: self-hosted
-    environment: ${{GITHUB_REF_NAME}}
+    environment: ${{github.ref_name}}
     needs: terraform
 
     defaults:
